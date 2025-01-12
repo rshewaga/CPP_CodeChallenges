@@ -144,7 +144,8 @@ static Hand GetDuplicates(uint8_t _c1,uint8_t _c2,uint8_t _c3,uint8_t _c4,uint8_
     // e.g. Three of a kind [2, 2, 2, 0, 0] = 8
     // e.g. Two pairs [1, 1, 1, 1, 0] = 4
     // e.g. Pair [1, 1, 0, 0, 0] = 2
-    std::vector<uint8_t> _countMatchingCards(5,0);
+    // Stored as ints because std::reduce below becomes C4242 unhappy otherwise!
+    std::vector<int> _countMatchingCards(5,0);
 
     for (auto i = 0; i < _cardNumbers.size(); ++i)
     {
@@ -159,7 +160,7 @@ static Hand GetDuplicates(uint8_t _c1,uint8_t _c2,uint8_t _c3,uint8_t _c4,uint8_
         }
     }
 
-    uint8_t _matchedSum = std::reduce(_countMatchingCards.begin(),_countMatchingCards.end());
+    int _matchedSum = std::reduce(_countMatchingCards.begin(),_countMatchingCards.end());
     switch (_matchedSum)
     {
         case 2:

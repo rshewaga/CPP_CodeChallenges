@@ -24,8 +24,8 @@ int main()
 
     // Track the running sum of payouts and how many payouts occured for each jackpot award outcome
     // <sum, count>
-    std::pair<double,uint16_t> jackpot100SumCount = {0,0};
-    std::pair<double,uint16_t> jackpot10SumCount = {0,0};
+    std::pair<double,uint16_t> jackpot100SumCount = {0.0,static_cast<uint16_t>(0)};
+    std::pair<double,uint16_t> jackpot10SumCount = {0.0,static_cast<uint16_t>(0)};
 
     double jackpot = 5000.0;
 

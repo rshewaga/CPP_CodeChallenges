@@ -4,11 +4,11 @@ cmake_minimum_required(VERSION 3.15)
 #######################################################################################
 # Configure project
 
-set(PROJ_NAME 01_ConsecutiveSymbols)
+set(PROJ_NAME 06_PokerEvaluator)
 project(
     ${PROJ_NAME}
     VERSION 1.0
-    DESCRIPTION "Counting consecutive matching symbols."
+    DESCRIPTION "Evaluate all possible 5-card poker hands."
     HOMEPAGE_URL https://github.com/rshewaga
     LANGUAGES CXX
 )

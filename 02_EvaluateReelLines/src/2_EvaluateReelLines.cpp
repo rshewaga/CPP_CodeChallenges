@@ -108,7 +108,7 @@ int main()
         // Find the game screen element next on the pay line and compare it to the base symbol
         for (auto j = 1; j < _line.size(); ++j)
         {
-            if (screen[RowColumnToScreenIndex(_line[j],j)] == _baseSymbol)
+            if (screen[RowColumnToScreenIndex(_line[j],static_cast<uint8_t>(j))] == _baseSymbol)
             {
                 _consecutiveCount++;
             }

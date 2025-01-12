@@ -10,3 +10,8 @@ project(
 )
 
 add_subdirectory(01_ConsecutiveSymbols)
+add_subdirectory(02_EvaluateReelLines)
+add_subdirectory(03_PickGameSimulation)
+add_subdirectory(04_MysteryJackpots)
+add_subdirectory(05_ProgressiveJackpot)
+add_subdirectory(06_PokerEvaluator)
