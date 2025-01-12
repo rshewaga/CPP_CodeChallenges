@@ -1,0 +1,11 @@
+*/build/*
+*/build2/*
+*/build3/*
+*/build-*/*
+*.autosave
+.cache
+.vs/
+.vscode/
+*.vcxproj
+*.sln
+CMakeFiles/
