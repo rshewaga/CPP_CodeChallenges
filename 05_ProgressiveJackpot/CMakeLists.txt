@@ -4,11 +4,11 @@ cmake_minimum_required(VERSION 3.15)
 #######################################################################################
 # Configure project
 
-set(PROJ_NAME 02_EvaluateReelLines)
+set(PROJ_NAME 05_ProgressiveJackpot)
 project(
     ${PROJ_NAME}
     VERSION 1.0
-    DESCRIPTION "Evaluating slot machine pay lines."
+    DESCRIPTION "Simulating a progressive jackpot game"
     HOMEPAGE_URL https://github.com/rshewaga
     LANGUAGES CXX
 )
@@ -37,7 +37,7 @@ add_library(${PROJ_NAME}_project_options INTERFACE)
 target_compile_features(
     ${PROJ_NAME}_project_options
     INTERFACE
-    cxx_std_14
+    cxx_std_20
 )
 
 target_compile_definitions(
@@ -65,10 +65,10 @@ set_project_warnings(${PROJ_NAME}_project_warnings)
 
 #######################################################################################
 
-set(EXEC_NAME 02_EvaluateReelLines)
+set(EXEC_NAME 05_ProgressiveJackpot)
 add_executable(
     ${EXEC_NAME}
-    src/2_EvaluateReelLines.cpp
+    src/5_ProgressiveJackpot.cpp
 )
 
 target_link_libraries( 

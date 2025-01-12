@@ -35,5 +35,5 @@ NOTE: This game can be calculated to exact probabilities but for this problem, a
 # Discussion
 * By "pick game", I assumed this is a game where 15 face-down symbols are presented and the player reveals a chosen face-down symbol one at a time.
 * The simulation could be expanded to regenerate new games per play from the "10 free games" and "5 free games" awards, however, the instructions explain that these should be considered credits only. If implementing this, I would change the game simulation to be a recursive function which counts down a number of "game lives" when the player loses.
-* C++20 for `format`, `shuffle`
+* C++20 for `std::format`, `std::shuffle`
 * For "What is the probability of selecting each of the following", I assumed this meant "overall, on average" and not "after 0 picks, after 1 pick, etc"

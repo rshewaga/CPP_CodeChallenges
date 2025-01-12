@@ -37,7 +37,7 @@ add_library(${PROJ_NAME}_project_options INTERFACE)
 target_compile_features(
     ${PROJ_NAME}_project_options
     INTERFACE
-    cxx_std_14
+    cxx_std_20
 )
 
 target_compile_definitions(

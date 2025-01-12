@@ -1,7 +1,7 @@
-*/build/*
-*/build2/*
-*/build3/*
-*/build-*/*
+build/*
+build2/*
+build3/*
+build-*/*
 *.autosave
 .cache
 .vs/
